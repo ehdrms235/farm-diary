@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Signup</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!--  footer CSS -->
+    <link rel="stylesheet" href="/static/css/footer.css">
+	<link rel="stylesheet" href="/static/css/signup2.css">
+	<link rel="stylesheet" href="/static/css/font.css">
+	<!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.superslides.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- <script src="/static/js/baguetteBox.min.js"></script> -->
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+    <!-- <script src="/static/js/custom.js"></script> -->
+</head>
+
+
+<body>
+     <!-- 네비케이션바 -->
+	{% include "nav_bar.html" %}
+
+    <!-- Start All Title Box -->
+    <div style="width:100%;height:400px;background-color:black;">
+		<div class="back_img">
+			<p class="focus-in-expand-fwd" style="padding-top:120px;">Farm Diary</p>
+			<p class="focus-in-expand-fwd2">농장일기 사이트에 오신걸 환영합니다.</p>
+		</div>
+	</div>
+   
+	<!-- 회원 가입 폼 -->
+	<form method="POST" action="/test">
+		<table style="margin-top:60px;">
+			<tr>
+				<td style="text-align:center; padding-bottom:40px;font-size:45px;color:#00CC33;" class="view_title">&nbsp;&nbsp;&nbsp;Farm Diary</td>
+			</tr>
+			<tr>
+				<td style="border-bottom:3px solid black;" class="view_title">&nbsp;&nbsp;&nbsp;1. 귀농인, 일반인 선택하세요</td>
+			</tr>
+			<tr>
+				<td>
+					<i style="margin-left:170px; margin-top:40px;" class="fas fa-tractor fa-7x"></i>
+					<i style="margin-left:170px;" class="fas fa-users fa-7x"></i>
+				</td>
+			</tr>
+			<tr style="margin-top:30px;">
+				<td>
+					<span style="font-size:25px; font-weight:700; margin-left:180px;"><input style="margin-top:50px;" type="radio" name="job" value="farm" checked>&nbsp;&nbsp;귀농인</span>
+					<span style="font-size:25px; font-weight:700; margin-left:220px;"><input style="margin-top:50px;" type="radio" name="job" value="user">&nbsp;&nbsp;일반인</span>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom:3px solid black; padding-top:50px;" class="view_title">&nbsp;&nbsp;&nbsp;2. 기본정보 입력<span style="float:right; color:red; font-size:15px;">*이부분은 필수입니다.</span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					<span style="color:red;">*</span><span>아이디</span><input type="text" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="userid">
+					<p style="margin-top:10px; text-align:center;">4~20자 이내 영문 소문자, 숫자만 가능합니다.</p>
+					<p style="margin-top:30px;"><span style="color:red;">*</span>비밀번호<input type="password" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="password"></p>
+					<p style="margin-top:10px; text-align:center;">반복, 연속문자, 개인정보 관련은 사용불가</p> 
+					<p style="margin-top:30px;"><span style="color:red;">*</span>비밀번호 확인<input type="password" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="pass_check"></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom:3px solid black; padding-top:50px;" class="view_title">&nbsp;&nbsp;&nbsp;3. 개인정보사항 입력</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="margin-top:30px;"><span style="color:red;">*</span>이름<input type="text" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="name"></p>
+					<p style="margin-top:30px;"><span style="color:red;">*</span>전화번호<input type="text" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="phoneNum"></p>
+					<p style="margin-top:30px;"><span style="color:red;">*</span>이메일<input type="text" style="width:400px;left: 0; right: 0; margin-left:auto; margin-right:auto; position:absolute;" name="email"></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom:3px solid black; padding-top:50px;" class="view_title"></td>
+			</tr>
+			<tr>
+				<td style="float:right; padding-top:20px; font-size:20px;"><button style="background-color:skyblue; color:white; border:none;" type="submit" value="회원가입">회원가입</button></td>
+			</tr>
+	</table>
+	</form>
+
+	{% include "footer.html" %}
+
+    
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    
+</body>
+
+</html>

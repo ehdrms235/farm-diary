@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>recommend</title>
+    <!-- Site Metas -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+   
+    <link rel="stylesheet" href="/static/css/footer.css">
+	
+	<link rel="stylesheet" href="/static/css/recommend.css">
+	
+	<link rel="stylesheet" href="/static/css/font.css">
+	
+	<link rel="stylesheet" href="/static/css/rec_normal.css">
+	
+	<!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.superslides.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- <script src="./static/js/baguetteBox.min.js"></script> -->
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+    <!-- <script src="./static/js/custom.js"></script> -->
+	<script src="/static/js/Login.js"></script>
+	<script src="/static/js/signup.js"></script>
+</head>
+
+<body>
+	{% include "nav_bar.html" %} <!-- 네비케이션바 -->
+   
+
+    <!-- Start All Title Box -->
+    <div style="width:100%;height:400px;background-color:black;">
+		<div class="back_img">
+			<p class="focus-in-expand-fwd" style="padding-top:120px;">Recommend farm</p>
+			<p class="focus-in-expand-fwd2">농사에 도움되는 작물과 기구를 추천 받아보세요</p>
+		</div>
+	</div>
+    <!-- End All Title Box -->
+	
+	<header>
+		<div class="col-lg-12" style="margin-top:50px;">
+			<div class="title-all text-center">
+				<h1>분기별 추천작물</h1><br>
+					<p>사진을 눌러 분기별 추천작물에 대한 정보를 확인해보세요</p>
+			</div>
+        <hr>
+		</div>
+	</header>
+	
+	<main class="text-center form-signin" style="max-width:900px; margin-top:0; margin-bottom:30px; margin:auto;">	
+        <span><button class="monthBtn monthBtn1" >봄</button></span>
+		<span><button class="monthBtn monthBtn2" >여름</button></span>
+		<span><button class="monthBtn monthBtn3" >가을</button></span>
+		<span><button class="monthBtn monthBtn4" >겨울</button></span>
+	</main>
+
+<!--봄-->
+<div class="btn_all btn1" style="padding: 70px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="1" src="/static/images/images2/봄/감자.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="2" src="/static/images/images2/봄/고구마.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="3" src="/static/images/images2/봄/고수.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="4" src="/static/images/images2/봄/당근.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="5" src="/static/images/images2/봄/대파.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px; border-radius:20px;">
+                        <img class="spring_img" id="6" src="/static/images/images2/봄/더덕.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="7" src="/static/images/images2/봄/도라지.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:300px;border-radius:20px;">
+                        <img class="spring_img" id="8" src="/static/images/images2/봄/딸기.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="9" src="/static/images/images2/봄/부추.png"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="10" src="/static/images/images2/봄/비트.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="11" src="/static/images/images2/봄/상추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="spring_img" id="12" src="/static/images/images2/봄/열무.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--여름-->
+<div class="btn_all btn2" style="display:none; padding: 70px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s1" src="/static/images/images2/여름/가지.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s2" src="/static/images/images2/여름/고추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s3" src="/static/images/images2/여름/당근.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s4" src="/static/images/images2/여름/대파.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s5" src="/static/images/images2/여름/무.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s6" src="/static/images/images2/여름/배추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s7" src="/static/images/images2/여름/상추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s8" src="/static/images/images2/여름/수박.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s9" src="/static/images/images2/여름/양배추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s10" src="/static/images/images2/여름/오이.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s11" src="/static/images/images2/여름/쪽파.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s12" src="/static/images/images2/여름/참외.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="summer_img" id="s13" src="/static/images/images2/여름/케일.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--가울-->
+<div class="btn_all btn3" style="display:none; padding: 70px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a1" src="/static/images/images2/가을/갓.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a2" src="/static/images/images2/가을/당근.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a3" src="/static/images/images2/가을/대파.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a4" src="/static/images/images2/가을/무.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a5" src="/static/images/images2/가을/배추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a6" src="/static/images/images2/가을/브로콜리.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a7" src="/static/images/images2/가을/상추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a8" src="/static/images/images2/가을/시금치.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a9" src="/static/images/images2/가을/양배추.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a10" src="/static/images/images2/가을/일당귀.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a11" src="/static/images/images2/가을/쪽파.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="autumn_img" id="a12" src="/static/images/images2/가을/콜라비.jpg"  style="width:350; height:280;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--겨울-->
+<div class="btn_all btn4" style="display:none; padding: 70px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w1" src="/static/images/images2/겨울/갓.jpg" alt="" style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w2" src="/static/images/images2/겨울/봄동.jpg" alt="" style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w3" src="/static/images/images2/겨울/시금치.jpg" alt="" style="width:350; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w4" src="/static/images/images2/겨울/쑥갓.jpg" alt="" style="width:200; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w5" src="/static/images/images2/겨울/청경채.jpg" alt="" style="width:300; height:280;"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" style="width:350px; height:280px;border-radius:20px;">
+                        <img class="winter_img" id="w6" src="/static/images/images2/겨울/케일.jpg" alt="" style="width:350; height:280;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="inform" id="spring1" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">감자</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            감자는 씨앗을 뿌려 재배하는것이 아닌 감자는 감자를 심어 재배하는 작물입니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            감자는 밭 갈기 전에 평당 5 ~ 7kg 퇴비와 적당량의 비료를 뿌려주어야 합니다
+            감자는 웃거름을 주지 않으니 밑거름이라도 충분히 뿌려주어야 하고
+            이때 토양살충제와 진딧물 약제를 같이 뿌려주면 병해충의 발생을 줄일수 있습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            땅의 온도가 높은 토지가 좋고 텃밭에서 재배를 하는경우에는 비닐로 멀칭을 해주면 더 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            기구로는 삽과 호미를 주로사용하고 기계는 감자를 전용으로 수확과 밭갈이를 할수 있는 경운기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--고구마-->
+<div class="inform" id="spring2" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">고구마</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            고구마는 주로 녹말이 많고 단 맛이 나는 혹줄기를 가진 재배용 작물입니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            고구마는 지온이 따뜻해야 하며 적정온도는 15도 이상입니다.고구마는 비가 온 다음날 심거나 심고나서 비가 내릴 경우가 가장 좋습니다.
+            고구마 모종을 간격 25~30cm로 하고 깊이는 3~5cm 정도로 하여 고구마의 모종을 심습니다.
+            고구마를 재배할때에는 비늘을 사용해주는것이 좋습니다. 고구마는 물을 많이 먹는 작물로서 물관리를 꾸준히 해주어야 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            지온이 따뜻한 토지가 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 호미와 삽 농사용 사지창을 사용하며 농기계로는 고구마를 전용으로 수확과 밭갈이를 하는 경운기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--고수-->
+<div class="inform" id="spring3" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">고수</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            고수는 미나리목 고수속 한해살이풀로 키가 30~60cm 까지 자라고 6~7월쯤에 하얀 꽃이 피며 9~10월쯤에 열매를 맺습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            고수는 본잎이 3~4장 나와서 베게 되면 솎아 주며 이랑넓이는 30cm에서 20cm 간격으로 정식합니다.
+            과식하거나 채광량이 부족할 때 비료가 과다할 때는 웃자라서 연약하고 쓰러지기 쉬우므로 질소질을 적게하고 안산 칼리질을 많게 하여 많은 결실을 기하는것이 좋습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            해가 잘 들고 배구사가 잘되는 비옥한 땅이 좋습니다. 석회를 뿌려 산성을 중화해주는것도 도움이 됩니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            기계는 사용하지 않는편이며 농기구로는 호미와 삽을 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--당근-->
+<div class="inform" id="spring4" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">당근</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            당근은 베타카로틴이 함유되어 있어 백내장에 좋고 여러가지 비타민이 함유되어있어 건강에 좋습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            당근은 온도 적응 폭이 넓어서 전국 어디서나 재배가 가능하며 특히 뿌리는 기온의 영향을 덜 받습니다.
+            생육 초기에는 적당한 온도를 유지하는것이 중요하며 하우스재배가 아닌경우에는 비닐멀칭을 하는것이 좋습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            뜨겁고 건조하지 않는 땅이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 사지창과 삽을 사용하며 농기계는 세척기와 파종기를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--대파-->
+<div class="inform" id="spring5" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">대파</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            대파의 알리신 성분은 마늘이나 양파에 들어있는 성분과 같으며 몸의 면역력을 높여주고 몸을 따뜻하게 하며 혈액 순환을 촉진하는 작용을 합니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            대파는 서늘한 기후를 좋아하는 다비성 작물로서 대개 15~20도의 기온에서 왕성한 성장을 보입니다.
+            대파는 거름을 많이 필요하므로 본포를 조성하기 전에 충분한 밑거름을 주어야 하며 생육기에도 보통 2~3차례로 나누어 웃거름을 주는 것이 보통입니다.
+            <hr>
+            <h2>2. 토지</h2>
+            대파는 물빠짐이 좋으면서 건조하지 않는 약산성 및 중성토질이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창과 낫을 사용하며 농기계는 전용 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--더덕-->
+<div class="inform" id="spring6" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">더덕</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            더덕은 사포닌이 과다한 콜레스트롤과 지방을 흡착시켜주며 폐기능을 강화해주는 성분과 호흡기 질환을 완화해주는 성분을 가지고 있습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            더덕은 이랑 넓이 60~70cm 높이 20~30cm로 골을내어 흙과 씨앗을 10 : 1 로 혼합하여 흩뿌림을 한다.
+            묘판을 할 경우에는 묘판넓이 90 ~ 120cm 높이 20 ~ 30cm로 만든다음, 종자를 고르게 흩어뿌림을 하고 5cm 정도 복토한 다음 짚을 얇게 깔고 물주기를 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양은 건조하지 않아야하며 평균수분을 유지해주어야 합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            더덕의 농기구는 사지창과 삽을 사용하며 농기계는 따로 사용하지 않습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--도라지-->
+<div class="inform" id="spring7" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">도라지</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            도라지의 주요 성분은 사포닌이며 수분 85.5%, 당질 10.4%, 섬유질 2.4%, 단백질 1.8%, 회분 0.5%, 지질 0.2% 등이다. 도라지의 효능은 폐와 기관지에 좋습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            도라지의 재배법은 두둑을 90~120cm로 만들고 두둑 높이는 15~40cm로 만듭니다.
+            골은 50~60cm로 만들어서 작업하기 편하게 만들며 추비는 6월 하순, 7월 하순 2회로 나눠서 요소와 염화칼리를 줍니다.
+            <hr>
+            <h2>2. 토지</h2>
+            도라지의 재배적지는 물빠짐이 좋고 햇빛이 잘드는 곳이 좋으며 흙은 모래와 진흙이 잘 섞인 모래 참흙이 좋습니다. 땅이 너무 습하면 잔뿌리가 많아져 상품성이 떨어집니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            도라지의 농기구는 사지창과 호미 삽을 사용하며 농기계는 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--딸기-->
+<div class="inform" id="spring8" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">딸기</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            딸기는 쌍떡잎식물의 이판화군 장미목 장미과의 여러해살이풀 혹은 그 열매이며 딸기의 진짜 열매는 과육 부분이 아니라 씨처럼 생긴 부분이다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            딸기의 재배방법은 촉성재배 또는 반촉성재배로 나뉘며 고랑 사이의 간격은 이랑을 합쳐 약 120cm로 골을 타고,
+            두둑 높이는 20~30cm 정도 높게 하여 뿌리 발육이 잘 되도록 하고 두둑당 2줄씩 20cm 내외 간격으로 심는다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양은 배수가 잘되고 수분을 알맞게 지닌 참흙의 토양이 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            딸기의 농기구는 높은 고도의 과일을 딸때 필요한 과일 피커를 사용하며 농기계는 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--부추-->
+<div class="inform" id="spring9" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">부추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            부추는 부추아과 부추속에 속하는 여러해살이 풀로써 한 번 심으면 몇년이고 잘라먹을수있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            부추의 재배방법은 부추씨앗을 하루정도 물에 담갔다 건져 그늘에 말린후 파종하며 호미로 골을내어 얕게 판다음, 5센치정도 간격으로 줄뿌림한다.
+            씨앗이 보이지 않을 정도로만 흙을 덮는다. 풀이나 짚으로 덮어준다
+            <hr>
+            <h2>2. 토지</h2>
+            부추는 토양이 건조하면 성장하지 못하므로 물을 자주 주어야 합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 낫과 호미를 주로 사용하며 농기계를 따로 사용하지는 않습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--비트-->
+<div class="inform" id="spring10" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">비트</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            명아주과 근대속의 식물로 비트는 당분 함량이 높다. 효능으로는 철분과 칼륨이 풍부해서 빈혈에 좋고 비타민A와 베타시아닌이 풍부해서 눈 및 혈관 건강에 도움이 됩니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            비트의 번식은 씨뿌리고 하는데 이랑의 폭을 45cm로 조파한 뒤 솎아서 12~15cm 간격으로 관리한다.
+            재배형에는 봄뿌림 재배, 여름뿌림 재배, 가을뿌림 재배가 있다. 봄뿌림 재배는 3~5월에 씨를 뿌려 5~7월에 수확하는 재배형으로 지온이 9도 이상일 때 씨를 뿌립니다.
+            <hr>
+            <h2>2. 토지</h2>
+            생육적온은 13~18도의 서늘한 기후를 좋아하며 내한성이 강한 토지에서 작물재배를 하는것이 적합합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창,낫,호미 를 주로 사용하며 농기계로는 트랙터와 농업용 굴삭기를  주로 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--상추-->
+<div class="inform" id="spring11" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">상추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            국화과의 한해살이풀 또는 두해살이풀의 속하며 상추에는 비타민B가 풍부하게 들어있어 긴장을 완화시키고 신진대사를 도와 피로회복에 도움을 줍니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            상추심기에 적당한 크기는 잎이 5~6 장 되었을 때가 적합하며 간격은 15x15cm, 15x20cm 깊이는 가급적 얕게 심는 것이 좋다.
+            봄, 가을에는 3~5일 간격, 여름에는 2~3일 간격으로 물을 주어야 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            상추는 토양이 건조하지지 않도록 수분관리를 꾸준히 해야합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창,낫,호미,삽 모든 농기구를 사용한다고 보면 됩니다. 농기계로는 농업용 트랙터를 주로 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--열무-->
+<div class="inform" id="spring12" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">열무</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            열무는 어린 무의 줄기를 말하며 열무의 효능은 장건강 및 소화촉진 작용이 있으며 전분을 분해하는 효소와 식이섬유가 풍부하게 함유되어 있어 변비예방과 소화기능 향상에 효과적인 식품입니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            열무는 서늘한 기후를 좋아하는 채소로써 적당한 온도는 20도 전후이며 추위에도 강해 0도에도 피해를 입지 않는다.
+            씨앗은 포기 사이의 30cm정도 줄 사이는 포기 사이의 1.5배인 45cm 정도로 심습니다. 만약 가뭄이 심하거나 땅이 지나치게 건조하면 흙을 다소 두텁게 하고 가볍게 두들겨 줍니다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양은 수분이 많으면 좋고 토양산도는 PH5.5~6.8정도의 약산성을 띄는 토양이 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 호미와 사지창을 사용하며 농기계로는 농업용경운기 농업용트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+
+<!-----------------------------------------------------여름------------------------------------------------------------->
+<!--가지-->
+<div class="inform" id="summers1" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">가지</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            속씨식물문 쌍떡잎식물강 가지목 가지과 가지속에 속하는 한해살이풀 채소로 가지의 효능에는 항 염증 및 항산화 효과와 암예방 효과가 있으며 높은 콜레스테롤과 혈압을 낮추는데 도움이 됩니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            가지는 화원이나 종묘상에서 모종을 구입하여 심는것이 좋고 가지 모종 하나만 심으면 모종이 자라다 잘못되면 낭패를 보니 2개이상 심는것이 좋습니다.
+            가지 모종과 모종사이의 재식간격은 45 ~ 50cm 이상 넉넉하게 띄워 심으며 가지 모종을 심기전에 심을 자리에 물을 흠뻑 주어 흙을 적셔준다.
+            <hr>
+            <h2>2. 토지</h2>
+            가지의 토양은 토심이 깊고 물 빠짐이 좋은 토양이 적당하며 산도는 PH 6.0(약산성 또는 중성) 정도가 좋습니다 광포화점이 다른 과채류에 비하여 낮아 햇빛이 부족하면 식물체가 연약해집니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 낫을 이용하며 농기계는 농업용 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--고추-->
+<div class="inform" id="summers2" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">고추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            가지과의 식물로 온대지방에서는 한해살이 풀이고 원산지와 같은 열대지방에서는 여러해살이풀로 자랍니다 길이는 6~9cm 이며 가지가 많이 생기고 잎은 길고 둥글며 끝이 뾰족하며 여름에 흰 꽃이 핍니다.
+            사과의 10배가 넘는 비타민 C를 함유하여 두세 개만 먹어도 일일 권장 비타민을 충족합니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            고추는 심기 3주 전에 거름을 뿌려야 합니다 그래야 거름에서 나오는 가스 피해를 받지 않습니다.
+            질 좋은 거름을 낼수록 밭은 좋아집니다. 가뭄과 장마에 강한 밭이 됩니다. 거름을 많이 낼수록 배수도 잘되고 수분 보유력도 좋아 집니다.
+            두둑과 고랑은 넓게 하는것이 좋고 두둑은 120~150cm로 합니다.
+            고추 심는 간격은 50cm 이상으로 하여야 장마와 가뭄 피해를 최소화 시킬수 있습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            고추 농사는 토양이 충분한 수분을 가지고 있어야 합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 낫과 사지창을 이용하며 농기계로는 세척기,탈곡기,트랙터 등을 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--당근-->
+<div class="inform" id="summers3" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">당근</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            당근은 베타카로틴이 함유되어 있어 백내장에 좋고 여러가지 비타민이 함유되어있어 건강에 좋습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            당근은 온도 적응 폭이 넓어서 전국 어디서나 재배가 가능하며 특히 뿌리는 기온의 영향을 덜 받습니다.
+            생육 초기에는 적당한 온도를 유지하는것이 중요하며 하우스재배가 아닌경우에는 비닐멀칭을 하는것이 좋습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            뜨겁고 건조하지 않는 땅이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 사지창과 삽을 사용하며 농기계는 세척기와 파종기를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--대파-->
+<div class="inform" id="summers4" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">대파</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            대파의 알리신 성분은 마늘이나 양파에 들어있는 성분과 같으며 몸의 면역력을 높여주고 몸을 따뜻하게 하며 혈액 순환을 촉진하는 작용을 합니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            대파는 서늘한 기후를 좋아하는 다비성 작물로서 대개 15~20도의 기온에서 왕성한 성장을 보입니다.
+            대파는 거름을 많이 필요하므로 본포를 조성하기 전에 충분한 밑거름을 주어야 하며 생육기에도 보통 2~3차례로 나누어 웃거름을 주는 것이 보통입니다.
+            <hr>
+            <h2>2. 토지</h2>
+            대파는 물빠짐이 좋으면서 건조하지 않는 약산성 및 중성토질이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창과 낫을 사용하며 농기계는 전용 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--무-->
+<div class="inform" id="summers5" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">무</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            무는 김치·깍두기·무말랭이·단무지 등 그 이용이 매우 다양하다.
+            특히, 비타민 C의 함량이 20∼25㎎이나 되어 예로부터 겨울철 비타민 공급원으로 중요한 역할을 해왔다.
+            이 밖에 무에는 수분이 약 94％, 단백질 1.1％, 지방 0.1％, 탄수화물 4.2％, 섬유질 0.7％가 들어 있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            무를 재배할 때 가을무는 8월 중순이나 하순에 파종하여 11월에 수확한다. 파종 방법은 주로 줄뿌림 또는 점뿌림이다.
+            봄에 조기출하를 목적으로 할 경우에는 종이분에 20일간 육묘했다가 옮겨 심는다.
+            시비는 10a당 질소 20kg, 인산 15kg, 탄산칼륨 25kg을 기준으로 한다.
+            밑거름으로 퇴비를 사용하는 것도 좋으나, 잘 썩지 않는 것일 경우 뿌리가 갈라져서 상품가치를 떨어뜨릴 염려가 있다.
+            서늘한 기후를 좋아하며, 일반적으로 가을재배에서는 꽃대가 오르지 않는다.
+            그러나 기온이 10℃ 이하로 2주 이상 계속되면 꽃눈이 형성되어 꽃대가 오르게 되므로, 온도관리에 신경을 써야 한다.
+            재배기간 중에 건습이 심하게 반복되면 뿌리가 갈라지는 현상이 일어나므로, 수분을 공급하는 데 유의해야 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양에 수분이 많으면 뿌리의 호흡에 의해 토양 중의 산소가 감소하고 이산화탄소의 농도가 높아져 뿌리가 자라는 것을 방해할 수 있으니
+            뿌리가 자라는데 있어서 토양수분의 양이 용수량의 60~80% 되는 상태가 가장 좋다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            이용되는 기계로는 무 복합 파종기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--배추-->
+<div class="inform" id="summers6" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">배추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            수분을 비롯해 칼슘과 칼륨, 비타민, 무기질 등의 영양소가 풍부한 배추는 재배 시기나 기간 등에 따라 다양한 품종이 재배되고 있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            준비된 밭에 30~40㎝ 간격으로 줄뿌림한다. 씨앗이 작고 둥글어 고르게 파종하기 힘들다.
+            파종 골은 호미를 이용해 밭 흙을 살짝 긁어내고 골의 중간에 배추 씨앗을 2~3㎝ 간격으로 한 알씩 넣는다.
+            그 위에 5㎜ 정도로 흙을 가볍게 덮고 물을 흠뻑 뿌려준다. 파종 후 한랭사를 씌우면 8월의 햇볕을 완화시켜주며, 주변의 벌레가 접근하지 못한다.
+            또한 굵은 소낙비가 내려도 물방울이 퍼져 잎을 보호하는 효과가 있다.
+            씨앗으로 파종한 배추의 본잎이 4~5매가 되면 모종이 다치지 않게 모종삽으로 한 포기씩 정성들여 파낸다.
+            모종삽으로 파내기 전에 물을 흠뻑 뿌려주는 것을 잊지 말자. 포트 모종을 구입했을 때도 뽑아내기 전에 물을 충분히 뿌려주고 2~3시간 후 하나씩 조심스럽게 뽑아낸다.
+            40㎝ 간격으로 하나씩 심는데, 너무 깊게 심지 않는 것이 좋다. 모종 상태에서 흙에 잠겼던 부분 이상을 심지 않는다.
+            기온이 떨어지기 전에 배추를 묶어주면 갑자기 기온이 내려가거나, 동해를 입을 기온 이하로 내려갔을 때 겉잎이 감싸주어 배추 속은 얼지 않는다.
+            하지만 기온이 어느 정도 유지되는 지역이나 김장을 일찍 하는 지역에서는 굳이 배추를 묶지 않아도 된다.
+            기온이 높을 때 배추를 묶어주면 오히려 배추 속이 상할 수도 있다. 몇 포기의 배추는 묶지 않고 그냥 밭에 두면 12월 초까지는 생식으로 이용할 수 있다.
+            시비로는 밑거름으로 주는 퇴비 또는 유박 등 유기질은 심기 10~15일 전에 준다.
+            일반적인 기비로 적용되는 기존 복합비료는 암모니아 가스발생으로 인해, 관행적으로 심기 10~15일 전에 주고 있으나, 도프의 두프로 및 유니칼슘은 암모니아 가스의 발생이 없으므로, 정식 직전에 살포되어도 무방하다.
+           <hr>
+            <h2>2. 토지</h2>
+            보수력이 좋고, 배수가 잘 되는 토양이 좋고 산도 5.5~6.8가 적당합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 사용되는 농기계로는 자동 정식기, 반자동 정식기, 수집형 배추수확기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--상추-->
+<div class="inform" id="summers7" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">상추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            국화과의 한해살이풀 또는 두해살이풀의 속하며 상추에는 비타민B가 풍부하게 들어있어 긴장을 완화시키고 신진대사를 도와 피로회복에 도움을 줍니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            상추심기에 적당한 크기는 잎이 5~6 장 되었을 때가 적합하며 간격은 15x15cm, 15x20cm 깊이는 가급적 얕게 심는 것이 좋다.
+            봄, 가을에는 3~5일 간격, 여름에는 2~3일 간격으로 물을 주어야 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            상추는 토양이 건조하지지 않도록 수분관리를 꾸준히 해야합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창,낫,호미,삽 모든 농기구를 사용한다고 보면 됩니다. 농기계로는 농업용 트랙터를 주로 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--수박-->
+<div class="inform" id="summers8" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">수박</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            대표적인 여름 재철 채소로 여름을 상징하는 이미지를 갖고 있습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            수박잎이 4 ~ 5장 정도 나오면 원줄기(어미줄기)를 자르고 원줄기 곁순에서 자라난 아들줄기중에서 생육이 왕성한 2개정도만 남기고, 나머지 아들줄기는 잘라냅니다
+            아들줄기의 15 ~ 20마디째의 암꽃에서 수박을 달리게 한후 아들줄기 15마디 전에서 자라는 수박의 암꽃을 모두 제거합니다.
+            그리고 모종 크기만큼 구덩이를 파고 구덩이마다 물을 충분히 줍니다.
+            그 후 수박 모종을 구덩이에 넣고 흙을 적당히 덮어주면 됩니다.
+            <hr>
+            <h2>2. 토지</h2>
+            충분한 수분을 가진 토양에 재배하는것이 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 사지창을 사용하며 농기계로는 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--양배추-->
+<div class="inform" id="summers9" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">양배추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            양배추는 고대 그리스 시대부터 즐겨 먹던 채소로 미국의 타임지가 선정한 서양 3대 장수식품 중 하나이다.
+            양배추의 품종은 매우 다양한데 현재는 푸른 양배추, 적양배추, 사보이 양배추, 방울 다다기 양배추 등이 일반적으로 소비되고 있다.
+            푸른 양배추의 소비량이 가장 많으며 샐러드와 볶음요리, 숙채 등으로 활용되고 있고, 적양배추는 샐러드 채소, 즙 등 제한적으로 사용되나 최근 소비가 증가하고 있다.
+            사보이 양배추는 최근 제주지역에서 시험 재배에 성공하여 유통되고 있다.
+            최근 방울 다다기 양배추가 큰 인기를 누리고 있는데, 방울토마토만큼 작은 크기에 일반 양배추보다 2배 이상의 영양을 함유하고 있기 때문이다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            모종용 밭을 준비한다. 줄 간격 20㎝에 2㎝당 하나의 씨앗이 놓이도록 줄뿌림한다. 씨앗이 작고 둥글어 고르게 파종하기가 매우 힘들다.
+            파종 후 한랭사를 씌우면 모종 기르기가 한결 쉬워진다. 활대를 50㎝ 간격으로 설치하고 위에 한랭사를 씌워준 다음 가장자리를 빈틈없이 흙으로 덮어준다.
+            한랭사 안에 여러 가지 모종을 동시에 가꿀 때는 씨앗 봉지를 돌로 눌러 경계 표시를 해두면 나중에 혼동이 없다(활대와 한랭사는 종묘상에서 쉽게 구할 수 있다).
+            시비는 아주심기 1주 전에 퇴비를 1㎡당 4㎏ 정도, 깻묵을 큰 컵으로 4컵(800g)을 넣고 밭을 일군다. 두둑의 높이는 20㎝, 폭은 40~50㎝ 정도로 만든다.
+            <hr>
+            <h2>2. 토지</h2>
+            건조하고 서늘한 지중해이므로 원산지 사정을 감안해 두둑을 높게 만들어 배수에 주의를 기울인다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창을 농기계로는 트랙터와 휴립피복기를 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--오이-->
+<div class="inform" id="summers10" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">오이</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            오이는 추운 계절을 싫어한다. 그래서 추위의 기준이 되는 서리를 피해서 재배하면 좋은 결과가 있다.
+            재배시기표를 참고로 심을 곳의 실제 날씨를 감안해 적당한 시기를 잡아야 한다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            봄에 서리가 내리지 않는 4월 하순에서 5월에 파종한다. 모종 육묘할 때 4월 초순에 씨앗을 넣고 4월말에서 5월초에 심는다.
+            시간차를 두고 6월까지 씨앗을 직파하면 싱싱한 풋 오이를 계속 먹을 수 있다. 페트병을 이용하여 오이씨를 점파 할 경우 4월 초순에도 가능하다.
+            재식 간격은 120cm의 이랑에 줄 간격 80cm, 포기간격60cm~90cm로 씨앗을 4~5개 넣어주고 본 잎이 나오면 튼실한 것 1개를 남기고 나머지는 제거하거나 옮겨심기를 해준다.
+            <hr>
+            <h2>2. 토지</h2>
+            유기물이 풍부하고 물 빠짐이 좋은 식양토가 좋고, 산도 5.3~7.0 정도가 적당하다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 모종 이식기를 이용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--쪽파-->
+<div class="inform" id="summers11" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">쪽파</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            국화과의 한해살이풀 또는 두해살이풀의 속하며 상추에는 비타민B가 풍부하게 들어있어 긴장을 완화시키고 신진대사를 도와 피로회복에 도움을 줍니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            만들어둔 밭에 20㎝ 정도의 간격으로 깊이 5㎝로 호미를 이용해 파낸다.
+            파낸 골에 싹이 나는 부분이 위로 가도록 해서 쪽파를 10㎝ 기준으로 둔다. 흙은 1㎝ 정도 덮어둔다.
+            종자가 조금 크고 튼실한 씨쪽파는 하나를 심고, 조금 작은 것은 2~3개를 붙여서 심는 것이 좋다. 일군 지 얼마 되지 않아 흙이 폭신폭신한 밭은 호미로 골을 만들지 않고 씨쪽파를 손으로 잡고 땅에 가볍게 꽂아 넣어도 된다.
+            이때는 일정하게 열을 맞추기 어렵다. 쪽파를 심는 간격은 상황에 따라 다르다.
+            싹이 돋은 후 어릴 때 솎아내면서 수확을 하는 목적이라면 조금 조밀하게 심고, 이듬해 봄에 수확하는 경우는 조금 더 넓게, 씨쪽파로 수확하는 경우는 간격을 더욱 넓게 잡는다.
+            쪽파는 밭에 두는 기간이 다른 채소에 비해 길다.
+            그래서 수확시기가 이듬해 봄이 되는 경우는 웃거름을 주기 수월하게 간격을 조금 더 넓게 조절해주어야 한다.
+            호미로 파종 골 사이를 긁어내고 거름을 넣고 흙을 덮을 수 있는 공간을 고려한다. 씨쪽파를 모두 심고 나면 물을 뿌려주어 싹이 빨리 올라오게 유도해주는 것이 좋다.
+            <hr>
+            <h2>2. 토지</h2>
+            물빠짐과 깊은 토심이 재배하기 유리하며 토양 내부 뿌리 산소공급이 필요합니다. 토양산도 5.7 ~ 7.4 정도가 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 호미, 잡초 제거기, 쪽파 결속기를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--참외-->
+<div class="inform" id="summers12" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">참외</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            참외는 멜론의 한 변종이며 땅에서 자라 과일인지 채소인지 헷갈리지만, 한국에서는 채소로 분류하며 정확히는 과채류에 속합니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            참외 모종을 심는 시기는 수박이나 고추,토마토 모종처럼 5월초에 심는것이 좋으며 참외는 심을 밭이랑 넓고 평평한 이랑으로 만든 후 참외 모종 심는 간격을 1m정도 넉넉한 간격을 두고 심는것이 좋습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            충분한 수분을 가진 토양에 재배하는것이 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 호미와 사지창을 사용하며 농기계로는 농업용경운기 농업용트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--케일-->
+<div class="inform" id="summers13" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">케일</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            케일은 양배추의 원종이므로 양배추에 준해서 기른다. 봄 재배와 가을 재배로 나눌 수 있다.
+            서늘한 기온을 좋아하므로 우리나라의 한여름을 피해서 기르면 풍성하게 수확할 수 있다.
+            같은 종자라도 여름에 모종을 길러 가을에 수확하는 케일의 잎이 봄 재배보다 훨씬 좋다.
+            봄 재배 케일은 여름에 접어들면서 수확을 하게 되어 무더위에 상하거나 약해진 잎이 많다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            모종용 밭을 준비한다. 줄 간격 20㎝에 2㎝당 하나의 씨앗이 놓이도록 줄뿌림한다.
+            씨앗이 작고 둥글어 고르게 파종하기가 매우 힘들다. 파종 후 한랭사를 씌우면 모종 기르기가 한결 쉬워진다.
+            활대를 50㎝ 간격으로 설치하고 위에 한랭사를 씌워준 다음 가장자리를 빈틈없이 흙으로 덮어준다.
+            파종 후 관리가 제일 힘들다. 틈틈이 들러 물도 주고, 적당한 때 한랭사를 걷어내고 자라는 정도를 관찰하면서 돋아나는 풀도 정리해준다.
+            아주심기를 염두에 두면, 포기 사이의 간격이 넓을수록 뿌리를 덜 다치게 하면서 모종삽으로 파내기에는 좋으나 모종의 상태를 고려해 10㎝ 정도 유지하도록 한다.
+            그러므로 수시로 솎아주어 포기 사이를 넓혀주는 것이 튼튼한 모종을 기르는 비결이다.
+
+            비료는 질소질과 칼리질 비료는 밑거름과 웃거름을 반반으로 나누어 주고, 나머지는 모두 밑거름으로 준다. 잎을 수화하면서 계속 웃거름을 조금씩 주도록 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            어느 토양에서든지 무난한 재배가 가능하나, 유기질이 풍부하고 보수력이 좋은 토양이 최적지이다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 농기구인 포크를 이용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+
+<!-----------------------------------------------------가을------------------------------------------------------------->
+<!--갓-->
+<div class="inform" id="autumna1" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">갓</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            높이는 1미터 가량으로 곧게 서며 가지가 갈라진다.
+            잎 수는 적고, 새 잎이나 줄기 그리고 잎 뒤쪽에 센 털이 난다 잎은 긴 타원형 또는 달걀꼴이며 가장자리에 불규칙한 톱니 모양이 있다.
+            잎자루는 없으나 줄기를 감싸지 않고 양면에 주름이 진다. 잎은 자줏빛을 띤 녹색이고 꽃은 작으며 노란빛을 나타낸다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            갓 재배는 연중재배가 가능하지만 8월 중·하순부터 10월 상·중순에 재배하는 것이 수량과 품
+            질 면에서 뛰어납니다. 파종을 할 때, 두둑은 3~4m 정도로 만들어 두둑면을 고른 다음 10a에
+            0.5~0.6ℓ 정도를 흩어 뿌립니다. 종자에서 싹이 터, 본 엽이 자라 수확할 때까지는 보온?차
+            광?방충을 위하여 망사를 이용한 막 덮기 재배를 합니다.
+             토양의 수분이 건조하지 않도록 관리해주고 뿌리기능이 약해져 자람이 더뎌지면 물에 요소
+            0.2~0.5%액을 섞어 잎에 뿌리는 엽면살포를 해줍니다. 솎음 작업은 빽빽하게 자란 곳을 중심
+            으로 2회 정도 솎아주는 것이 좋습니다.
+
+            내한성도 비교적 강해, 주로 가을에 씨를 뿌려 늦가을 또는 월동후 이른 봄에 수확하기도 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양에 대한 적응성은 크며, 습지를 좋아하기 때문에 수전(水田) 뒷갈이 재배에 적합하다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 파종기를 이용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--당근-->
+<div class="inform" id="autumna2" style="display: none">
+     <div class="title-all text-center">
+        <h1 style="padding-top:50px;">당근</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            당근은 베타카로틴이 함유되어 있어 백내장에 좋고 여러가지 비타민이 함유되어있어 건강에 좋습니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            당근은 온도 적응 폭이 넓어서 전국 어디서나 재배가 가능하며 특히 뿌리는 기온의 영향을 덜 받습니다.
+            생육 초기에는 적당한 온도를 유지하는것이 중요하며 하우스재배가 아닌경우에는 비닐멀칭을 하는것이 좋습니다.
+            <hr>
+            <h2>2. 토지</h2>
+            뜨겁고 건조하지 않는 땅이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 사지창과 삽을 사용하며 농기계는 세척기와 파종기를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--대파-->
+<div class="inform" id="autumna3" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">대파</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            대파의 알리신 성분은 마늘이나 양파에 들어있는 성분과 같으며 몸의 면역력을 높여주고 몸을 따뜻하게 하며 혈액 순환을 촉진하는 작용을 합니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            대파는 서늘한 기후를 좋아하는 다비성 작물로서 대개 15~20도의 기온에서 왕성한 성장을 보입니다.
+            대파는 거름을 많이 필요하므로 본포를 조성하기 전에 충분한 밑거름을 주어야 하며 생육기에도 보통 2~3차례로 나누어 웃거름을 주는 것이 보통입니다.
+            <hr>
+            <h2>2. 토지</h2>
+            대파는 물빠짐이 좋으면서 건조하지 않는 약산성 및 중성토질이 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창과 낫을 사용하며 농기계는 전용 트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--무-->
+<div class="inform" id="autumna4" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">무</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            무는 김치·깍두기·무말랭이·단무지 등 그 이용이 매우 다양하다.
+            특히, 비타민 C의 함량이 20∼25㎎이나 되어 예로부터 겨울철 비타민 공급원으로 중요한 역할을 해왔다.
+            이 밖에 무에는 수분이 약 94％, 단백질 1.1％, 지방 0.1％, 탄수화물 4.2％, 섬유질 0.7％가 들어 있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            무를 재배할 때 가을무는 8월 중순이나 하순에 파종하여 11월에 수확한다. 파종 방법은 주로 줄뿌림 또는 점뿌림이다.
+            봄에 조기출하를 목적으로 할 경우에는 종이분에 20일간 육묘했다가 옮겨 심는다.
+            시비는 10a당 질소 20kg, 인산 15kg, 탄산칼륨 25kg을 기준으로 한다.
+            밑거름으로 퇴비를 사용하는 것도 좋으나, 잘 썩지 않는 것일 경우 뿌리가 갈라져서 상품가치를 떨어뜨릴 염려가 있다.
+            서늘한 기후를 좋아하며, 일반적으로 가을재배에서는 꽃대가 오르지 않는다.
+            그러나 기온이 10℃ 이하로 2주 이상 계속되면 꽃눈이 형성되어 꽃대가 오르게 되므로, 온도관리에 신경을 써야 한다.
+            재배기간 중에 건습이 심하게 반복되면 뿌리가 갈라지는 현상이 일어나므로, 수분을 공급하는 데 유의해야 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양에 수분이 많으면 뿌리의 호흡에 의해 토양 중의 산소가 감소하고 이산화탄소의 농도가 높아져 뿌리가 자라는 것을 방해할 수 있으니
+            뿌리가 자라는데 있어서 토양수분의 양이 용수량의 60~80% 되는 상태가 가장 좋다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            이용되는 기계로는 무 복합 파종기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--배추-->
+<div class="inform" id="autumna5" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">배추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            수분을 비롯해 칼슘과 칼륨, 비타민, 무기질 등의 영양소가 풍부한 배추는 재배 시기나 기간 등에 따라 다양한 품종이 재배되고 있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            준비된 밭에 30~40㎝ 간격으로 줄뿌림한다. 씨앗이 작고 둥글어 고르게 파종하기 힘들다.
+            파종 골은 호미를 이용해 밭 흙을 살짝 긁어내고 골의 중간에 배추 씨앗을 2~3㎝ 간격으로 한 알씩 넣는다.
+            그 위에 5㎜ 정도로 흙을 가볍게 덮고 물을 흠뻑 뿌려준다. 파종 후 한랭사를 씌우면 8월의 햇볕을 완화시켜주며, 주변의 벌레가 접근하지 못한다.
+            또한 굵은 소낙비가 내려도 물방울이 퍼져 잎을 보호하는 효과가 있다.
+            씨앗으로 파종한 배추의 본잎이 4~5매가 되면 모종이 다치지 않게 모종삽으로 한 포기씩 정성들여 파낸다.
+            모종삽으로 파내기 전에 물을 흠뻑 뿌려주는 것을 잊지 말자. 포트 모종을 구입했을 때도 뽑아내기 전에 물을 충분히 뿌려주고 2~3시간 후 하나씩 조심스럽게 뽑아낸다.
+            40㎝ 간격으로 하나씩 심는데, 너무 깊게 심지 않는 것이 좋다. 모종 상태에서 흙에 잠겼던 부분 이상을 심지 않는다.
+            기온이 떨어지기 전에 배추를 묶어주면 갑자기 기온이 내려가거나, 동해를 입을 기온 이하로 내려갔을 때 겉잎이 감싸주어 배추 속은 얼지 않는다.
+            하지만 기온이 어느 정도 유지되는 지역이나 김장을 일찍 하는 지역에서는 굳이 배추를 묶지 않아도 된다.
+            기온이 높을 때 배추를 묶어주면 오히려 배추 속이 상할 수도 있다. 몇 포기의 배추는 묶지 않고 그냥 밭에 두면 12월 초까지는 생식으로 이용할 수 있다.
+            시비로는 밑거름으로 주는 퇴비 또는 유박 등 유기질은 심기 10~15일 전에 준다.
+            일반적인 기비로 적용되는 기존 복합비료는 암모니아 가스발생으로 인해, 관행적으로 심기 10~15일 전에 주고 있으나, 도프의 두프로 및 유니칼슘은 암모니아 가스의 발생이 없으므로, 정식 직전에 살포되어도 무방하다.
+           <hr>
+            <h2>2. 토지</h2>
+            보수력이 좋고, 배수가 잘 되는 토양이 좋고 산도 5.5~6.8가 적당합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 사용되는 농기계로는 자동 정식기, 반자동 정식기, 수집형 배추수확기가 있습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--브로콜리-->
+<div class="inform" id="autumna6" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">브로콜리</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            브로콜리(broccoli)는 겨자과에 속하는 짙은 녹색채소로 '녹색 꽃양배추'라고도 불린다.
+            브로콜리는 샐러드, 수프, 스튜 등 서양음식에 가장 많이 사용하는 채소 중 하나다. 11월부터 4월까지가 제철이지만 요즘은 사철 구별 없이 먹을 수 있다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            더덕은 이랑 넓이 60~70cm 높이 20~30cm로 골을내어 흙과 씨앗을 10 : 1 로 혼합하여 흩뿌림을 한다.
+            묘판을 할 경우에는 묘판넓이 90 ~ 120cm 높이 20 ~ 30cm로 만든다음, 종자를 고르게 흩어뿌림을 하고 5cm 정도 복토한 다음 짚을 얇게 깔고 물주기를 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양은 건조하지 않아야하며 평균수분을 유지해주어야 합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            더덕의 농기구는 사지창과 삽을 사용하며 농기계는 따로 사용하지 않습니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--상추-->
+<div class="inform" id="autumna7" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">상추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            국화과의 한해살이풀 또는 두해살이풀의 속하며 상추에는 비타민B가 풍부하게 들어있어 긴장을 완화시키고 신진대사를 도와 피로회복에 도움을 줍니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            상추심기에 적당한 크기는 잎이 5~6 장 되었을 때가 적합하며 간격은 15x15cm, 15x20cm 깊이는 가급적 얕게 심는 것이 좋다.
+            봄, 가을에는 3~5일 간격, 여름에는 2~3일 간격으로 물을 주어야 합니다.
+            <hr>
+            <h2>2. 토지</h2>
+            상추는 토양이 건조하지지 않도록 수분관리를 꾸준히 해야합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창,낫,호미,삽 모든 농기구를 사용한다고 보면 됩니다. 농기계로는 농업용 트랙터를 주로 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--시금치-->
+<div class="inform" id="autumna8" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">시금치</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            명아주과에 속하는 1년생 작물로서 포기 전체에 털이 없다. 자웅이주이고 성비는 1:1이다.
+            잎은 긴 자루가 있고 장삼각형부터 계란형까지 모양이 다양하다.
+            웅주는 잎이 적고 수상화서(穗狀花序) 또는 원추형화서이다. 자주는 엽액에 3~5개의 꽃이 착생된다.
+            암수꽃 모두 꽃자루가 없다.
+            종자는 품종에 따라 차이가 있으나 둥근 것과 모난 것이 있고, 잎의 가장자리가 깊이 패어 들어간 모양의 결각(缺刻)이 있는 것과 없는 것이 있으며 잎줄기는 짧다.
+            뿌리는 대체고 붉은 색을 나타낸다.
+            비료 사용은 유기질 퇴비와 인산질 비료는 모두 밑거름으로 주고, 질소와 칼리질 비료는 절반을 웃거름으로 사용한다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            시금치의 재배 형태는 봄가꾸기·여름가꾸기·가을가꾸기의 세 가지가 있다.
+            봄가꾸기는 4~5월에 씨를 뿌려 5~6월에 수확하는 것으로 대표적인 품종으로는 노벨이 있다.
+            여름가꾸기는 6~8월에 씨를 뿌려 8~10월에 수확하는 형태로 재래종이 재배되나 온도가 25℃ 이상 되면 자라지 않으므로 고랭지에서만 재배된다.
+            가을가꾸기는 9~10월에 씨를 뿌려 10~11월에 수확하는 것으로 주로 우성시금치가 재배된다.
+            파종은 줄뿌림을 주로 하며 시비량은 10a당 질소 20kg, 칼륨 15kg, 인산 12kg 정도이다.
+            수확은 재배 시기에 따라 다르나 파종 뒤 50~60일에 실시한다
+            <hr>
+            <h2>2. 토지</h2>
+            토심이 깊고 물 빠짐이 좋은. 점질토, 사질토가 좋음.  최적의 ph는 6.0 ~ 7.0입니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 주로 낫을 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--양배추-->
+<div class="inform" id="autumna9" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">양배추</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            양배추는 고대 그리스 시대부터 즐겨 먹던 채소로 미국의 타임지가 선정한 서양 3대 장수식품 중 하나이다.
+            양배추의 품종은 매우 다양한데 현재는 푸른 양배추, 적양배추, 사보이 양배추, 방울 다다기 양배추 등이 일반적으로 소비되고 있다.
+            푸른 양배추의 소비량이 가장 많으며 샐러드와 볶음요리, 숙채 등으로 활용되고 있고, 적양배추는 샐러드 채소, 즙 등 제한적으로 사용되나 최근 소비가 증가하고 있다.
+            사보이 양배추는 최근 제주지역에서 시험 재배에 성공하여 유통되고 있다.
+            최근 방울 다다기 양배추가 큰 인기를 누리고 있는데, 방울토마토만큼 작은 크기에 일반 양배추보다 2배 이상의 영양을 함유하고 있기 때문이다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            모종용 밭을 준비한다. 줄 간격 20㎝에 2㎝당 하나의 씨앗이 놓이도록 줄뿌림한다. 씨앗이 작고 둥글어 고르게 파종하기가 매우 힘들다.
+            파종 후 한랭사를 씌우면 모종 기르기가 한결 쉬워진다. 활대를 50㎝ 간격으로 설치하고 위에 한랭사를 씌워준 다음 가장자리를 빈틈없이 흙으로 덮어준다.
+            한랭사 안에 여러 가지 모종을 동시에 가꿀 때는 씨앗 봉지를 돌로 눌러 경계 표시를 해두면 나중에 혼동이 없다(활대와 한랭사는 종묘상에서 쉽게 구할 수 있다).
+            시비는 아주심기 1주 전에 퇴비를 1㎡당 4㎏ 정도, 깻묵을 큰 컵으로 4컵(800g)을 넣고 밭을 일군다. 두둑의 높이는 20㎝, 폭은 40~50㎝ 정도로 만든다.
+            <hr>
+            <h2>2. 토지</h2>
+            건조하고 서늘한 지중해이므로 원산지 사정을 감안해 두둑을 높게 만들어 배수에 주의를 기울인다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 사지창을 농기계로는 트랙터와 휴립피복기를 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--일당귀-->
+<div class="inform" id="autumna10" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">일당귀</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            미나리과 식물인 일당귀. 각지에서 심는다.
+            가을에 뿌리를 캐 물에 씻어 햇볕에 말린다. 일당귀를 당귀와 같은 목적으로 쓴다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            너비 90~120cm 정도의 높은 이랑을 만들고 약 20cm 간격으로 골을 만들어 씨앗을 흩어 뿌린 다음에 흙을 덮어주고
+            가능하다면 왕겨나 차광막 등을 이용하여 차광을 하여 준다. 당귀의 발아율이 적으므로 씨앗을 가능한 여유있게 뿌려준다.
+            인산,퇴비등을 밑거름으로 뿌려주고 생육상태를 보아가며 2~3회 웃거름으로 질소,칼리를 사용한다. 즉 파종 시에 퇴비나 복합비료등으로 밑거름을 넣어주고 추후 질소비료 등으로 웃거름을 준다.
+            <hr>
+            <h2>2. 토지</h2>
+            토심이 깊고 물빠짐이 좋은 즉 보수력이 좋은 조건인게 좋다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+
+            <hr>
+        </table>
+    </div>
+</div>
+<!--쪽파-->
+<div class="inform" id="autumna11" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">쪽파</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            국화과의 한해살이풀 또는 두해살이풀의 속하며 상추에는 비타민B가 풍부하게 들어있어 긴장을 완화시키고 신진대사를 도와 피로회복에 도움을 줍니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            만들어둔 밭에 20㎝ 정도의 간격으로 깊이 5㎝로 호미를 이용해 파낸다.
+            파낸 골에 싹이 나는 부분이 위로 가도록 해서 쪽파를 10㎝ 기준으로 둔다. 흙은 1㎝ 정도 덮어둔다.
+            종자가 조금 크고 튼실한 씨쪽파는 하나를 심고, 조금 작은 것은 2~3개를 붙여서 심는 것이 좋다. 일군 지 얼마 되지 않아 흙이 폭신폭신한 밭은 호미로 골을 만들지 않고 씨쪽파를 손으로 잡고 땅에 가볍게 꽂아 넣어도 된다.
+            이때는 일정하게 열을 맞추기 어렵다. 쪽파를 심는 간격은 상황에 따라 다르다.
+            싹이 돋은 후 어릴 때 솎아내면서 수확을 하는 목적이라면 조금 조밀하게 심고, 이듬해 봄에 수확하는 경우는 조금 더 넓게, 씨쪽파로 수확하는 경우는 간격을 더욱 넓게 잡는다.
+            쪽파는 밭에 두는 기간이 다른 채소에 비해 길다.
+            그래서 수확시기가 이듬해 봄이 되는 경우는 웃거름을 주기 수월하게 간격을 조금 더 넓게 조절해주어야 한다.
+            호미로 파종 골 사이를 긁어내고 거름을 넣고 흙을 덮을 수 있는 공간을 고려한다. 씨쪽파를 모두 심고 나면 물을 뿌려주어 싹이 빨리 올라오게 유도해주는 것이 좋다.
+            <hr>
+            <h2>2. 토지</h2>
+            물빠짐과 깊은 토심이 재배하기 유리하며 토양 내부 뿌리 산소공급이 필요합니다. 토양산도 5.7 ~ 7.4 정도가 적절합니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 호미, 잡초 제거기, 쪽파 결속기를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--콜라비-->
+<div class="inform" id="autumna12" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">열무</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            열무는 어린 무의 줄기를 말하며 열무의 효능은 장건강 및 소화촉진 작용이 있으며 전분을 분해하는 효소와 식이섬유가 풍부하게 함유되어 있어 변비예방과 소화기능 향상에 효과적인 식품입니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            열무는 서늘한 기후를 좋아하는 채소로써 적당한 온도는 20도 전후이며 추위에도 강해 0도에도 피해를 입지 않는다.
+            씨앗은 포기 사이의 30cm정도 줄 사이는 포기 사이의 1.5배인 45cm 정도로 심습니다. 만약 가뭄이 심하거나 땅이 지나치게 건조하면 흙을 다소 두텁게 하고 가볍게 두들겨 줍니다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양은 수분이 많으면 좋고 토양산도는 PH5.5~6.8정도의 약산성을 띄는 토양이 좋습니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 호미와 사지창을 사용하며 농기계로는 농업용경운기 농업용트랙터를 사용합니다.
+            <hr>
+        </table>
+    </div>
+</div>
+
+<!-----------------------------------------------------겨울------------------------------------------------------------->
+<!--갓-->
+<div class="inform" id="winterw1" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">갓</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            높이는 1미터 가량으로 곧게 서며 가지가 갈라진다.
+            잎 수는 적고, 새 잎이나 줄기 그리고 잎 뒤쪽에 센 털이 난다 잎은 긴 타원형 또는 달걀꼴이며 가장자리에 불규칙한 톱니 모양이 있다.
+            잎자루는 없으나 줄기를 감싸지 않고 양면에 주름이 진다. 잎은 자줏빛을 띤 녹색이고 꽃은 작으며 노란빛을 나타낸다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            갓 재배는 연중재배가 가능하지만 8월 중·하순부터 10월 상·중순에 재배하는 것이 수량과 품
+            질 면에서 뛰어납니다. 파종을 할 때, 두둑은 3~4m 정도로 만들어 두둑면을 고른 다음 10a에
+            0.5~0.6ℓ 정도를 흩어 뿌립니다. 종자에서 싹이 터, 본 엽이 자라 수확할 때까지는 보온?차
+            광?방충을 위하여 망사를 이용한 막 덮기 재배를 합니다.
+             토양의 수분이 건조하지 않도록 관리해주고 뿌리기능이 약해져 자람이 더뎌지면 물에 요소
+            0.2~0.5%액을 섞어 잎에 뿌리는 엽면살포를 해줍니다. 솎음 작업은 빽빽하게 자란 곳을 중심
+            으로 2회 정도 솎아주는 것이 좋습니다.
+
+            내한성도 비교적 강해, 주로 가을에 씨를 뿌려 늦가을 또는 월동후 이른 봄에 수확하기도 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양에 대한 적응성은 크며, 습지를 좋아하기 때문에 수전(水田) 뒷갈이 재배에 적합하다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 파종기를 이용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--봄동-->
+<div class="inform" id="winterw2" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">봄동</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            고구마는 주로 녹말이 많고 단 맛이 나는 혹줄기를 가진 재배용 작물입니다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            <hr>
+            <h2>2. 토지</h2>
+            보수력이 좋고 배수가 잘되는 토양, 토양 산도 ph5.5 ~ 6.8
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            <hr>
+        </table>
+    </div>
+</div>
+<!--시금치-->
+<div class="inform" id="winterw3" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">시금치</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            명아주과에 속하는 1년생 작물로서 포기 전체에 털이 없다. 자웅이주이고 성비는 1:1이다.
+            잎은 긴 자루가 있고 장삼각형부터 계란형까지 모양이 다양하다.
+            웅주는 잎이 적고 수상화서(穗狀花序) 또는 원추형화서이다. 자주는 엽액에 3~5개의 꽃이 착생된다.
+            암수꽃 모두 꽃자루가 없다.
+            종자는 품종에 따라 차이가 있으나 둥근 것과 모난 것이 있고, 잎의 가장자리가 깊이 패어 들어간 모양의 결각(缺刻)이 있는 것과 없는 것이 있으며 잎줄기는 짧다.
+            뿌리는 대체고 붉은 색을 나타낸다.
+            비료 사용은 유기질 퇴비와 인산질 비료는 모두 밑거름으로 주고, 질소와 칼리질 비료는 절반을 웃거름으로 사용한다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            시금치의 재배 형태는 봄가꾸기·여름가꾸기·가을가꾸기의 세 가지가 있다.
+            봄가꾸기는 4~5월에 씨를 뿌려 5~6월에 수확하는 것으로 대표적인 품종으로는 노벨이 있다.
+            여름가꾸기는 6~8월에 씨를 뿌려 8~10월에 수확하는 형태로 재래종이 재배되나 온도가 25℃ 이상 되면 자라지 않으므로 고랭지에서만 재배된다.
+            가을가꾸기는 9~10월에 씨를 뿌려 10~11월에 수확하는 것으로 주로 우성시금치가 재배된다.
+            파종은 줄뿌림을 주로 하며 시비량은 10a당 질소 20kg, 칼륨 15kg, 인산 12kg 정도이다.
+            수확은 재배 시기에 따라 다르나 파종 뒤 50~60일에 실시한다
+            <hr>
+            <h2>2. 토지</h2>
+            토심이 깊고 물 빠짐이 좋은. 점질토, 사질토가 좋음.  최적의 ph는 6.0 ~ 7.0입니다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구는 주로 낫을 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--쑥갓-->
+<div class="inform" id="winterw4" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">쑥갓</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            전체적으로 털이 없고 독특한 향기가 있다. 잎은 어긋나고 2회 우상으로 깊게 갈라지며 잎자루가 없다.
+            꽃은 8월에 피고 황색 또는 백색이며 가지와 원줄기 끝에 두화가 1개씩 달리고 지름 3cm 내외이다.
+            가장자리에 암꽃의 설상화가 달리고 중앙에 양성 통상화가 달린다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            재배는 보통 봄·가을에 실시하지만 연중 재배할 수도 있다. 파종은 줄뿌림하거나 산파(散播)한다.
+            거름은 10a당 두엄 1,000kg, 질소 16kg, 인산 7kg, 칼리 8kg 정도이고, 수확은 본잎이 5-10장, 길이 10-15cm 정도 될 때 한다.
+            품종에는 대엽종·중엽종·소엽종이 있는데, 대한민국에서는 대부분 중엽종이 재배되고 있다.
+            중엽종은 분지가 많고 생육이 왕성하며 추수가 비교적 빠른 장점이 있다.
+            <hr>
+            <h2>2. 토지</h2>
+            토심이 깊은 사양토가 재배에 적합하다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 주로 호미를 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--청경채-->
+<div class="inform" id="winterw5" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">청경채</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            청경채는 중국 원산의 채소로 우리나라에서 재배해온 기간이 비교적 짧다.
+            서늘한 지역에서는 연중 재배가 가능하지만 특별한 시설이 없으면 한여름과 겨울에 재배하기가 힘들다.
+            쌈밥집에서 재료로 많이 이용하면서 유명해졌는데 생식, 나물, 국 등의 재료로 활용할 수 있다. 가을 재배가 수월하다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            물 빠짐이 좋은 밭을 골라 1㎡당 3㎏의 완숙퇴비와 깻묵 2컵(400g) 정도를 넣는다. 밭을 일굴 때는 두둑의 높이를 10㎝로 하고 폭은 1m로 한다.
+            두둑을 만든 지 2주 후 호미로 얕은 골을 만들고 씨앗이 1~2㎝에 하나씩 떨어지게 한다. 줄 간격은 30㎝ 정도로 한다. 파종 후 물을 흠뻑 뿌려준다.
+            옮겨심기가 가능한 작물이므로 싹이 잘 나지 않는 곳에는 빽빽하게 자라고 있는 부분의 모종을 골라 이식한다.
+            청경채는 그다지 많은 거름을 필요로 하지도 않고 짧은 기간에 수확이 가능한 채소라 웃거름을 주지 않아도 된다.
+            <hr>
+            <h2>2. 토지</h2>
+            토양의 산도로 ph 6.5 ~ 7.0 가 좋다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            농기구로는 주로 호미를 사용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+<!--케일-->
+<div class="inform" id="winterw6" style="display: none">
+    <div class="title-all text-center">
+        <h1 style="padding-top:50px;">케일</h1>
+        <hr>
+        <p style="margin-left:20%; margin-right:20%; text-align:center;">
+            케일은 양배추의 원종이므로 양배추에 준해서 기른다. 봄 재배와 가을 재배로 나눌 수 있다.
+            서늘한 기온을 좋아하므로 우리나라의 한여름을 피해서 기르면 풍성하게 수확할 수 있다.
+            같은 종자라도 여름에 모종을 길러 가을에 수확하는 케일의 잎이 봄 재배보다 훨씬 좋다.
+            봄 재배 케일은 여름에 접어들면서 수확을 하게 되어 무더위에 상하거나 약해진 잎이 많다.
+        </p>
+        <hr>
+    </div>
+    <div class="container my-3">
+        <table class="table">
+            <h2>1. 재배방법</h2>
+            모종용 밭을 준비한다. 줄 간격 20㎝에 2㎝당 하나의 씨앗이 놓이도록 줄뿌림한다.
+            씨앗이 작고 둥글어 고르게 파종하기가 매우 힘들다. 파종 후 한랭사를 씌우면 모종 기르기가 한결 쉬워진다.
+            활대를 50㎝ 간격으로 설치하고 위에 한랭사를 씌워준 다음 가장자리를 빈틈없이 흙으로 덮어준다.
+            파종 후 관리가 제일 힘들다. 틈틈이 들러 물도 주고, 적당한 때 한랭사를 걷어내고 자라는 정도를 관찰하면서 돋아나는 풀도 정리해준다.
+            아주심기를 염두에 두면, 포기 사이의 간격이 넓을수록 뿌리를 덜 다치게 하면서 모종삽으로 파내기에는 좋으나 모종의 상태를 고려해 10㎝ 정도 유지하도록 한다.
+            그러므로 수시로 솎아주어 포기 사이를 넓혀주는 것이 튼튼한 모종을 기르는 비결이다.
+
+            비료는 질소질과 칼리질 비료는 밑거름과 웃거름을 반반으로 나누어 주고, 나머지는 모두 밑거름으로 준다. 잎을 수화하면서 계속 웃거름을 조금씩 주도록 한다.
+            <hr>
+            <h2>2. 토지</h2>
+            어느 토양에서든지 무난한 재배가 가능하나, 유기질이 풍부하고 보수력이 좋은 토양이 최적지이다.
+            <hr>
+            <h2>3. 농기구/기계</h2>
+            주로 농기구인 포크를 이용한다.
+            <hr>
+        </table>
+    </div>
+</div>
+
+<br><br><br>
+
+<style>
+    h2 {
+        font-weight:bold;
+    }
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.btn_all').hide();
+    $('.btn1').show();
+
+    $('.monthBtn').on("click", function(){
+        $('.btn_all').hide();
+        $('.inform').hide();
+        $(".btn"+($(".monthBtn").index(this)+1)).show();
+        $(".monthBtn").css("font-weight", "normal");
+        $(this).css("font-weight", "bold");
+    });
+});
+
+$(document).ready(function () {
+    $('#test1').click(function(){
+        var state = $("#menu_box").css("display");
+
+        if(state == "none")
+            $("#menu_box").css("display", "block");
+        else
+            $("#menu_box").css("display", "none");
+    });
+
+    $('.spring_img').click(function(){
+        var state_id = $(this).attr('id');
+        console.log(state_id)
+        $('.inform').hide();
+        $("#spring"+state_id).show();
+    });
+    $('.summer_img').click(function(){
+        var state_id = $(this).attr('id');
+        console.log(state_id)
+        $('.inform').hide();
+        $("#summer"+state_id).show();
+    });
+    $('.autumn_img').click(function(){
+        var state_id = $(this).attr('id');
+        console.log(state_id)
+        $('.inform').hide();
+        $("#autumn"+state_id).show();
+    });
+    $('.winter_img').click(function(){
+        var state_id = $(this).attr('id');
+        console.log(state_id)
+        $('.inform').hide();
+        $("#winter"+state_id).show();
+    });
+});
+</script>
+
+	{% include "footer.html" %}
+
+    
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+	
+</body>
+

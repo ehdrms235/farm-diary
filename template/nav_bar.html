@@ -1,0 +1,57 @@
+<!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container"> 
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    
+                    <a class="navbar-brand" href="/"><strong>Farm Diary</strong></a>
+                </div>
+               
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="fruitinform">정보 마당</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">장 마당</a>
+                            <ul class="dropdown-menu">
+								<li><a href="fruitmarket">과일 마당</a></li>
+								<li><a href="cropmarket">작물 마당</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="recommend" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">추천 마당</a>
+                          
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="/meeting">만남의 광장</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">게시판</a>
+                            <ul class="dropdown-menu">
+								<li><a href="borad" >목록</a></li>
+								<li><a href="write" >글 작성</a></li>
+                                
+                            </ul>
+                        </li>
+                        {% if user_id is not none and user_id != "-1" %}
+                        <li class="nav-item"><a class="nav-link" href="/mypage">{{name}}님</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+						{% else %}
+                        <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup">sign up</a></li>
+						{% endif %}
+                    </ul>
+					
+                </div>
+                
+            </div>
+
+        </nav>
+    </header>

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Product view</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+    
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+	<link rel="stylesheet" href="/static/css/product_view.css">
+	
+	<link rel="stylesheet" href="/static/css/view.css">
+	
+	<link rel="stylesheet" href="/static/css/regist_view.css">
+	
+	<link rel="stylesheet" href="/static/css/font.css">
+	
+	<link rel="stylesheet" href="/static/css/barbar.css">
+	
+	<link href="/static/css/jquery-nice-number.css" rel="stylesheet">
+
+	<!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/jquery-nice-number.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <script src="/static/js/jquery.superslides.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+
+	<script src="/static/js/Login.js"></script>
+	<script src="/static/js/signup.js"></script>
+	<script>
+		$(window).on('load', function(){
+			$('#count[type="number"]').niceNumber();
+		});
+		
+	</script>
+	<script>
+		$(function() {
+			$('#button1').click( function() {
+				if( $(this).html() == '<i class="fas fa-chevron-down"></i>' ) {
+					$(this).html('<i class="fas fa-chevron-up"></i>');
+					$('.b').slideDown();
+				}
+				else {
+					$(this).html('<i class="fas fa-chevron-down"></i>');
+					$('.b').slideUp();
+				}
+				});
+		});	
+	</script>
+	<script>
+		$(function() {
+			$('#button2').click( function() {
+				if( $(this).html() == '<i class="fas fa-chevron-down"></i>' ) {
+					$(this).html('<i class="fas fa-chevron-up"></i>');
+					$('.d').slideDown();
+				}
+				else {
+					$(this).html('<i class="fas fa-chevron-down"></i>');
+					$('.d').slideUp();
+				}
+				});
+		});
+	
+	</script>
+	<style>
+		.b { display: none; height: 500px; width:1000px;margin:auto;text-align:center; background-color: white;border:1px solid lightgrey; }
+		.d { display: none; max-height:100%; overflow:auto;width:1000px;margin:auto;text-align:center; background-color: white;border:none; }
+	</style>
+ 
+</head>
+
+
+<body>
+    {% include "nav_bar.html" %} <!-- 네비케이션바 -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+   <!-- Start All Title Box -->
+    <div style="width:100%;height:400px;background-color:black;">
+		<div class="back_img">
+			<p class="focus-in-expand-fwd" style="padding-top:120px;">Fruit market</p>
+			<p class="focus-in-expand-fwd2">직접 농사한 작물을 저렴한 가격에 구매해보세요</p>
+		</div>
+	</div>
+    <!-- End All Title Box -->
+	
+	<div class="menu" style="text-align:center;">
+		<ul>                
+			<li><a href="/fruitmarket">과일</a></li>
+			<li><a href="/cropmarket">작물</a></li>
+			<li><a href="/product_regist">과일, 작물 등록</a></li>
+		</ul>
+	</div>
+
+	<!-- <img src="/static/images/apple.jpg" style="width:300px; height:300px;" class="focus-in-expand-fwd"> -->
+	
+	{% for view in product %} 
+	<div class="row" style="margin-top:50px;height:400px;">
+		<div class="col-sm-6">
+			<div class="item-image" style="text-align:center;">
+				<img style="border-radius:12%;width:350px;height:350px;" id="item_image" src="{{ url_for('static',filename='uploads/'+view[7])}}" alt="" title="">
+			</div>
+			<div class="h30 visible-xs"></div>
+		</div>
+		<div class="col-sm-6">
+			<h1>{{view[1]}}</h1>
+	
+
+			<form method="post" action="/purchase{{view[0]}}">
+			<table class="div-table table">
+				<tbody>
+					<tr>
+						<tr><th scope="row">종류</th><td style="padding-right:200px;">{{view[5]}}</td></tr>
+						<tr><th scope="row">판매가격</th><td>{{view[3]}}원</td></tr>
+						<tr><th>배송비결제</th><td>주문시 결제</td></tr>
+						<tr>
+							<th>수량</th>
+								<td>
+								<input style="float:left;"type='number' name='count' id='count' class="nice-number" value='0'/>
+								<!-- <input style="float:left;"type='button' onclick='count("minus")' value='-'/> -->
+								<!-- <span style="float:left; border:1px solid black;padding-left:20px;padding-right:20px"> -->
+									<!-- <div name='result' id='result'>1</div> -->
+								<!-- </span> -->
+								<!-- <input  type='button' onclick='count("plus")' value='+'/> -->
+								</td>								
+						</tr>
+						
+				</tbody>
+			</table>
+				
+			
+			<!-- 총 구매액 -->
+
+					
+
+			<div style="text-align:center; padding:12px 0;">
+				<ul class="item-buy-btn">
+					<input type="submit" style="width:500px;text-align:center;margin:auto;" value="바로구매" class="btn btn-green btn-block">
+				</ul>
+			</div>
+		</form>
+
+
+		</div>
+		
+	</div>
+
+	<hr style="border:1p solid lightgrey;width:90%;"></hr>
+	<div style="margin-left:100px;height:200px;">
+		{{view[4]}}
+	
+	</div>
+	
+	<hr style="width:90%;"></hr>
+	
+
+	{% endfor %}
+	
+	
+	 
+	<h2 style="font-size:25px; font-weight:800;margin-top:40px; text-align:center;">후기 작성하기</h2>
+	 
+	<div style="margin-top:50px;text-align:center;">
+		<button id='button1' style="border-radius:50%;border:1px solid lightgrey;background-color:white;"><i class="fas fa-chevron-down"></i></button>
+		
+			<div class="b">
+			
+				<form method="post" action="/proComment_write{{pro_num}}" enctype="multipart/form-data">
+					<div style="margin-top:50px;margin-bottom:30px;float:left;padding-left:100px;">
+					<img id="user_image" src="#" alt="" style="height:100px; width:100px;">
+					<input  accept=".jpg" onchange="PreviewImage();" type="file" id="user_profile_img" name="img_name" >
+					</div>
+						<p><textarea style="height:200px; width:800px;border:1px solid lightgrey;"placeholder="후기쓰기.."title="content" name="content"></textarea></p>
+					<br>
+				<div>
+					<button>후기 작성</button>
+				</div>
+		
+
+	</form>
+	</div>
+		
+      </div>
+    </div> 
+	 
+	<h2 style="font-size:25px; font-weight:800;margin-top:40px; text-align:center;">후기 확인</h2>
+	
+	<div style="margin-top:50px;text-align:center;margin-bottom:30px;">
+		<button id='button2' style="border-radius:50%;border:1px solid lightgrey;background-color:white;"><i class="fas fa-chevron-down"></i></button>
+		<div class="d">
+			<table style="margin:auto;margin-top:50px;width:600px;margin-bottom:30px;">
+			{% if comment | length == 0 %}
+				<tr>
+					<td style="border:none;">등록된 댓글이 없습니다.</td>
+				</tr>
+			
+			{% else %}
+				{%for list in comment%}
+				<tr style="border-bottom:1px solid lightgrey;">
+					<td style="width:150px;height:30px;vertical-align:top;"><strong>{{list[0]}}</strong></td>
+					<td style="height:50px;vertical-align:top;width:500px;">{{list[1]}}</td>
+					<td style="width:140px;vertical-align:top;">{{list[3]}}</td>
+				</tr>
+		
+				
+
+				{% endfor %}
+			{% endif %}
+		</table>
+		</div>
+	</div>
+	
+
+	{% include "footer.html" %}
+
+    
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    
+</body>
+
+</html>

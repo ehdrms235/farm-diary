@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Inform</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+    
+    <!--  footer CSS -->
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+	
+	<!-- search CSS -->
+	<link rel="stylesheet" href="/static/css/search.css">
+
+	<link rel="stylesheet" href="/static/css/inform-view.css">
+	
+	<link rel="stylesheet" href="/static/css/font.css">
+	
+	<link rel="stylesheet" href="/static/css/view.css">
+	 <!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.superslides.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+	<script src="/static/js/Login.js"></script>
+	<script src="/static/js/signup.js"></script>
+</head>
+
+
+<body>
+	<!-- 네비케이션바 -->
+	{% include "nav_bar.html" %}
+  
+
+    <!-- Start All Title Box -->
+    <div style="width:100%;height:400px;background-color:black;">
+		<div class="back_img">
+			<p class="focus-in-expand-fwd" style="padding-top:120px;">Inform farm</p>
+			<p class="focus-in-expand-fwd2">검색을 통해 농업에 대한 정보를 얻어보세요.</p>
+		</div>
+	</div>
+
+	
+	<div class="menu" style="text-align:center;">
+		<ul>                
+			<li><a href="/fruitinform">정보 검색</a></li>
+			<li><a href="/searchvideo">동영상 검색</a></li>
+		</ul>
+	</div>
+	
+	
+	<div class="col-lg-12" style="margin-top:50px;">
+        <div class="title-all text-center">
+			<h1>Search</h1>
+				<p>검색을 통해 작물에대한 정보를 얻어보세요..</p>
+		</div>
+    </div>
+	
+	
+	<form method="POST" action="/inform_view">
+		<div class="box">
+			<div class="container-1">
+				<input type="search" id="search" placeholder="Search..." name="keyword">
+				<button style="font-size:38px; background-color:#2b303b;color:white;border:none"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+	</form>
+	
+	<hr style="width:90%;color:grey;margin-top:30px;margin-bottom:30px;tex-align:center"></hr>
+	
+	<h2 style="text-align:center;font-weight:800;font-size:28px;margin-top:30px;margin-bottom:30px;">{{keyword}}를 통한 검색 결과입니다.</h2>
+	
+	
+	<div class="inform_wrap">
+		
+		{% for i in range(1, s_title_list|length) %}
+			
+			<h1 style="font-size:28px;font-weight:650;margin-left:50px;">{{s_title_list[i-1]}}</h1>
+			<h3 style="margin-left:40px;font-size:23px;font-weight:350;">{{content_list[i]}}</h3>
+
+		{% endfor %}
+	</div>
+	
+	
+    {% include "footer.html" %}
+
+	
+
+    
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+   
+</body>
+
+</html>

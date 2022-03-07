@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+
+	<!-- 슬라이드 배너 css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<!-- 무료 폰트 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- media screen 메뉴바 CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+	<!-- 하단 footer CSS -->
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <!-- 슬라이드 배너 CSS -->
+    <link rel="stylesheet" href="/static/css/banner.css">
+	<!-- 상품 4개 보여주는 CSS -->
+	<link rel="stylesheet" href="/static/css/regist_view.css">
+	<!-- 메인 페이지 비디오 CSS -->
+	<link rel="stylesheet" href="/static/css/main_video.css">
+    
+	  <!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/baguetteBox.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+	<script src="/static/js/Login.js"></script>
+	<script src="/static/js/signup.js"></script>
+
+</head>
+
+<body>
+	<!-- 네비게이션바 -->
+    {% include "nav_bar.html" %}
+
+
+    <!-- 슬라이드바 -->
+    <div class="owl-carousel owl-theme">
+		<div class="slide slide-4">
+            <div class="center_align_re slide-content">
+				
+            <a href="/"><h1>Farm Diary</h1></a>    
+                <p>농장 일기 사이트에 오신걸 환영합니다.</p>
+         
+
+            </div>
+        </div>
+        <div class="slide slide-1">
+            <div class="center_align_re slide-content">
+				
+            <a href="{{url_for('fruitinform')}}"><h1>정보 마당 </h1></a>    
+                <p>각종 작물에 대한 정보를 확인해보세요</p>
+         
+
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="center_align_re slide-content">
+                <a href="{{url_for('fruitmarket')}}"><h1>장 마당</h1></a>
+                <p>저렴한 작물들을 구입해 보세요</p>
+
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="center_align_re slide-content">
+                <a href="{{url_for('meeting')}}"><h1>만남의 광장</h1></a>
+                <p>다른 사람들과 농장을 공유해보세요</p>
+ 
+            </div>
+        </div>
+    </div>
+    
+	<!-- 슬라이드 배너 작동  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                
+            	items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:1500,
+                autoplayHoverPause:true,
+                
+             
+            });
+        });
+    </script>
+    
+	<!-- 농장 소개  -->
+	<div class="box-add-products">
+		<div class="col-lg-12">
+            <div class="title-all text-center">
+				<h1 style="font-size:40px;">Welcome Farm Diary</h1>
+					<p style="margin-bottom:70px;">농장일기 사이트에 오신걸 환영합니다.</p>
+            </div>
+        </div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<video autoplay controls loop>
+						<source src="/static/videos/nature.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="col-lg-6 col-md-6 col-sm-12" style="margin-top:50px;">
+						<span>저희 사이트는 농업 정보와 과일,작물 정보를 제공하고, 건강한 작물을 구입할 수 있습니다.
+						정보를 제공함으로써 농업에 대한 지식을 습득할 수 있으며, 농장 공유를 통해 사람들과 유대감을 쌓아보시기 바랍니다. 즐거운 시간 되시기 바랍니다.
+						</span>
+						</br></br>
+						<p>Our site provides agricultural information, fruit and crop information, and you can purchase healthy crops.
+						By providing information, you can gain knowledge of agriculture, and build bonds with people through farm sharing. I hope you'll have a nice time.
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- 메인 페이지 리스트 제목 -->
+	<div class="row">
+        <div class="col-lg-12">
+			<div class="title-all text-center">
+				<h1 style="margin-top:50px;">Monthly Fruits & Crops</h1>
+					<p>이달의 농사 짓기 좋은 과일과 작물을 확인해보세요!</p>
+            </div>
+        </div>
+    </div>
+	
+	
+    <!-- 추천 마당 (봄, 여름 , 가을 ,겨울) -->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+						{% if (month==3) or (month==4) or (month==5) %}
+							<img style="height:300px;" class="img-fluid" src="/static/images/spring.jpg" alt="" />
+						
+							<a class="btn hvr-hover" href="/recommend">봄의 추천 작물</a>
+						{% elif (month==6) or (month==7) or (month==8)%}
+							<img style="height:300px;" class="img-fluid" src="/static/images/summer.jpg" alt="" />
+						
+							<a class="btn hvr-hover" href="/recommend">여름의 추천 작물</a>
+						{% elif (month==9) or (month==10) or (month==11)%}
+							<img style="height:300px;" class="img-fluid" src="/static/images/fall.jpg" alt="" />
+						
+							<a class="btn hvr-hover" href="/recommend">가을의 추천 작물</a>
+						{% elif (month==12) or (month==1) or (month==2)%}
+							<img style="height:300px;" class="img-fluid" src="/static/images/winter.jpg" alt="" />
+						
+							<a class="btn hvr-hover" href="/recommend">겨울의 추천 작물</a>
+						{% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img style="height:300px;" class="img-fluid" src="./static/images/meeting_farm.jpg" alt="" />
+                        <a class="btn hvr-hover" href="/meeting">만남의 광장 바로가기</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img style="height:300px;" class="img-fluid" src="./static/images/weather.jpg" alt="" />
+                        <a class="btn hvr-hover" href="/weathertest">날씨 정보</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+	 
+	
+	
+
+    
+   
+        <div class="container" style="margin-bottom:60px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Fruits & Vegetables</h1>
+                        <p>저렴한 과일과 작물을 구입해보세요!</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+           
+
+           
+    <!-- 가장 최근에 등록한 상품들  -->
+    <div class="regist_wrap">
+		{% for product in new_product %}
+			<div class="regist_wrap2">
+				<a href="/product_view{{product[0]}}"> <img src="{{ url_for('static',filename='uploads/'+product[7])}}"></a>
+					<div style="width:250px;margin:auto;">
+						<h4 style="margin-top:20px;font-size:20px;font-weight:800;">{{product[1]}}</h3>
+						<h4 style="font-weight:500;font-size:18px;">{{product[3]}}&nbsp;원</h4>
+					</div>
+			</div>
+		
+		{% endfor %}
+	</div>
+                
+
+                
+            
+       
+    
+  
+
+    <!-- 하단 footer -->
+   
+	{% include "footer.html" %}
+
+	<!-- 위로 올라가는 버튼 -->
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    
+</body>
+
+</html>

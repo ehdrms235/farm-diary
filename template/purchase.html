@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Purchase</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+   
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+    
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+
+	
+	<link rel="stylesheet" href="/static/css/view.css">
+	
+	<link rel="stylesheet" href="/static/css/font.css">
+	
+
+	<!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+	<script src="/static/js/Login.js"></script>
+	<script src="/static/js/signup.js"></script>
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    
+	<!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+  <!-- iamport.payment.js -->
+  <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
+	
+	
+	<!-- <script type="text/javascript" -->
+	<!-- src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <!-- <script type="text/javascript" -->
+	<!-- src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script> -->
+	<script>
+		function sample4_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var extraRoadAddr = ''; // 참고 항목 변수
+
+                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                    extraRoadAddr += data.bname;
+                }
+                // 건물명이 있고, 공동주택일 경우 추가한다.
+                if(data.buildingName !== '' && data.apartment === 'Y'){
+                   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                }
+                // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                if(extraRoadAddr !== ''){
+                    extraRoadAddr = ' (' + extraRoadAddr + ')';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample4_postcode').value = data.zonecode;
+                document.getElementById("sample4_roadAddress").value = roadAddr;
+                document.getElementById("sample4_jibunAddress").value = data.jibunAddress;
+                
+                // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                if(roadAddr !== ''){
+                    document.getElementById("sample4_extraAddress").value = extraRoadAddr;
+                } else {
+                    document.getElementById("sample4_extraAddress").value = '';
+                }
+
+                var guideTextBox = document.getElementById("guide");
+                // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                if(data.autoRoadAddress) {
+                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                    guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                    guideTextBox.style.display = 'block';
+
+                } else if(data.autoJibunAddress) {
+                    var expJibunAddr = data.autoJibunAddress;
+                    guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                    guideTextBox.style.display = 'block';
+                } else {
+                    guideTextBox.innerHTML = '';
+                    guideTextBox.style.display = 'none';
+                }
+            }
+        }).open();
+    }
+	</script>
+    <style>
+		.pur_btn {
+			border:none;
+			background-color:skyblue;
+			color:white;
+			font-size:20px;
+			font-weight:800px;
+			
+		}
+		.pur_btn:hover {
+			background-color:blue;
+			transition:0.5s;
+		}
+
+	</style>
+	</head>
+	
+
+<body>
+    {% include "nav_bar.html" %} <!-- 네비케이션바 -->
+
+
+    <!-- Start All Title Box -->
+    <div style="width:100%;height:400px;background-color:black;">
+		<div class="back_img">
+			<p class="focus-in-expand-fwd" style="padding-top:120px;">Fruitmarket</p>
+			<p class="focus-in-expand-fwd2">직접 농사한 작물을 저렴한 가격에 구매해보세요</p>
+		</div>
+	</div>
+
+	
+	<div class="menu" style="text-align:center;">
+		<ul>                
+			<li><a href="/fruitmarket">과일</a></li>
+			<li><a href="/cropmarket">작물</a></li>
+			<li><a href="/product_regist">과일, 작물 등록</a></li>
+		</ul>
+	</div>
+	
+	<h2 style="text-align:center;margin-top:60px;font-weight:800;margin-bottom:30px;">Product Info</h2>
+	
+	<table style="border:1px solid lightgrey; margin-top:50px;margin:auto;border-radius:12%">
+		
+		<thead>
+			<tr style="border-bottom:1px solid lightgrey;">
+				<th>상품 정보</th>
+				<th>수량</th>
+				<th>주문 금액</th>
+                <th>보유포인트</th>
+			</tr>
+		</thead>
+		{% for list in detail %}
+		<tbody>
+		<tr>
+			<td style="height:100px;">
+				<img style="width:80px;height:80px;" src="{{ url_for('static',filename='uploads/'+list[7])}}">
+				{{list[1]}}
+			</td>
+			<td>{{count}}개</td>
+			<td>{{count * list[3]}}원</td>
+            <td>{{point}}원</td>
+		</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	
+	<h2 style="text-align:center;margin-top:60px;font-weight:800;margin-bottom:60px">Recipient Info</h2>
+	
+		<table style="border: 1px solid lightgrey;margin:auto;">
+			<tr>
+				<td style="font-weight:800;padding-left:10px;">수령인</td>
+				<td style="padding-left:20px;">{{name}}</td>
+			</tr>
+			<tr style="border-top:1px solid lightgrey;">
+				<td style="font-weight:800;padding-left:10px;">전화 번호</td>
+				<td style="padding-left:20px;">{{phone}}</td>
+			<tr>
+			<tr style="border-top:1px solid lightgrey;">
+				<td style="font-weight:800;padding-left:10px;">배송지 정보</td>
+				<td style="height:200px;padding-left:20px;">
+					<div>
+						<input type="text" id="sample4_postcode" placeholder="우편번호">
+						<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+						<input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+						<input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+						<span id="guide" style="color:#999;display:none"></span>
+						<input type="text" id="sample4_detailAddress" placeholder="상세주소">
+						<input type="text" id="sample4_extraAddress" placeholder="참고항목">
+		
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div style="text-align:center;margin-top:50px;margin-bottom:50px;">
+		<button id="check_module" type="submit" class="pur_btn">바로결제</button>
+        <script>
+		$("#check_module").click(function() {
+            if($('#sample4_postcode').val()!="" && $('#sample4_roadAddress').val()!=""  && $('#sample4_jibunAddress').val()!="" && $('#sample4_detailAddress').val()!=""){
+			var IMP = window.IMP; // 생략가능
+            
+			IMP.init('imp94991652');
+			IMP.request_pay({
+				pg : 'kakaopay',
+			
+				pay_method : 'card',
+
+				merchant_uid : 'merchant_' + new Date().getTime(),
+		
+				name : '{{detail[0][1]}}',
+				amount : {{count * detail[0][3]}} //count*{{detail[0][4]}}
+			}, function(rsp) {
+				console.log(rsp);
+				if (rsp.success) {
+					var msg = '결제가 완료되었습니다.';
+                    alert(msg);    
+                    $.ajax({ 
+                        url:'/test2',
+                        data:{'postcode' : $('#sample4_postcode').val(),
+                            'roadAddress' : $('#sample4_roadAddress').val(),
+                            'jibunAddress' : $('#sample4_jibunAddress').val(),
+                            'detailAddress' : $('#sample4_detailAddress').val(),
+                            'extraAddress' : $('#sample4_extraAddress').val(),
+                            'productNum' : '{{detail[0][0]}}',
+                            'count':{{count}} ,
+                            'price':{{count * detail[0][3]}},
+                            'buyer':'{{name}}',
+                           'seller_id':'{{detail[0][2]}}' 
+                             
+ 
+                            },
+                        method:'POST', 
+                        dataType:'json',
+                        success:function(result){
+                            alert("성공"); 
+                        },error:function(err){console.log("err",err)}
+                    });
+                    document.location.href= '/mypage'
+				} else {
+					var msg = '결제에 실패하였습니다.';
+					msg += '에러내용 : ' + rsp.error_msg;
+                    alert(msg);
+                    
+               
+				}
+				
+			});
+            
+               }
+               else{
+                alert("주소를 입력해주세요.");}
+ 
+
+		});
+        </script>
+    
+       <button  id="check_module2" type="submit" class="pur_btn">포인트결제</button>
+        <script>
+		$("#check_module2").click(function() {
+			console.log({{point}});
+			console.log({{count}});
+			console.log({{detail[0][3]}});
+            if($('#sample4_postcode').val()!="" && $('#sample4_roadAddress').val()!=""  && $('#sample4_jibunAddress').val()!="" && $('#sample4_detailAddress').val()!=""){
+                if({{point}}>{{count * detail[0][3]}}){
+                    alert('결제완료');
+                    $.ajax({ 
+                        url:'/test3',
+                        data:{
+                            'price':'{{count * detail[0][3]}}',
+                            'point':'{{point}}'
+                            },
+                        method:'POST', 
+                        dataType:'json',
+                        success:function(result){
+                            alert("성공"); 
+                        },error:function(err){console.log("err",err)}
+                    });
+                }
+                else{
+                 alert('포인트가 부족합니다.');}
+            }
+            else{
+                alert("주소를 입력해주세요.");}
+		});
+        </script>
+		</div>
+    
+
+	{% include "footer.html" %}
+
+    
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    
+</body>
+
+</html>
