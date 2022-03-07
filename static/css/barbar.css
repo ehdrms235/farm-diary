@@ -1,0 +1,25 @@
+#menu1 {
+  width:1000px;
+  height:50px;
+  margin:auto; 
+}
+
+#menu1 ul li {
+  float:left;
+  width:33%;
+  height:100%;
+  line-height:50px;
+  text-align:center;
+  background:lightgrey;
+  color:white;
+  font-weight:800;
+}
+
+#menu1 ul li a {
+  display:block;
+}
+
+#menu1 ul li a:hover {
+  background:lightgrey;
+  color:#fff;
+}

@@ -1,0 +1,12 @@
+.btn_inform {
+	background-color:lightgrey;
+	border:0;
+	outline:0;
+	border-radius:0.35em;
+	font-size:15px;
+	color:white;
+	
+}
+.btn_inform a:hover {
+	background-color:white;
+}

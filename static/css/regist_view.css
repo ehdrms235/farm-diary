@@ -1,0 +1,32 @@
+.regist_wrap {
+  margin-top:120px;
+  border:none;
+  text-align:center;
+  width:1400px;
+  margin:auto;
+}
+
+.regist_wrap2 {
+  width:300px;
+  height:400px;
+  display:inline-block;
+  border:none;
+  text-align:center;
+  margin:auto;
+  overflow:hidden;
+ 
+}
+
+.regist_wrap2 img {
+  width:250px;
+  height:250px;
+  border-radius:20%;
+  
+  
+}
+
+
+.regist_wrap2 img:hover {
+ filter:brightness(70%);
+
+}

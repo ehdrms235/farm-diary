@@ -1,0 +1,44 @@
+table {
+  height:600px;
+  border-top:3px solid blue;
+  border-bottom: 3px solid blue;
+  width:1000px;
+  text-align:center;
+  
+}
+
+.product {
+ width:500px;
+ font-weight:500;
+}
+
+.area {
+  maxlength:2048;
+  height: 250px;
+  width:100%;
+}
+
+.btn {
+ font-size:20px;
+ border-radius:5px;
+ border:none;
+ background-color:skyblue;
+ color:white;
+}
+
+.btn:hover {
+ background-color:blue;
+ 
+}
+
+@media screen and (max-width:768px;) {
+ table {
+  height:300px;
+  border-bottom: 3px solid blue;
+  width:500px;
+  text-align:center;
+  margin:auto;
+  
+}
+
+}

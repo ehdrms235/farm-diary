@@ -1,0 +1,42 @@
+.login_t {
+  margin-top:60px;
+  border:1px solid lightgrey;
+  height:450px;
+  width:500px;
+
+}
+
+.login_id {
+  width:200px;
+  left: 0;
+  right: 0;
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
+}
+
+.login_pw {
+  width:200px;
+  left: 0;
+  right: 0;
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
+}
+
+
+.btn {
+  border:none;
+  font-size:15px;
+  margin-top:60px;
+  margin-right:40px;
+  font-weight:800;
+  text-align:center;
+  vertical-align:center;
+ 
+}
+
+.btn:hover {
+  background-color:skyblue;
+
+}

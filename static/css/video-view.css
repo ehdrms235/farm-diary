@@ -1,0 +1,15 @@
+.video_wrap {
+  margin-top:50px;
+  border:none;
+  text-align:center;
+}
+
+.video_wrap2 {
+  width:600px;
+  height:600px;
+  
+  display:inline-block;
+  border:none;
+  text-align:center;
+  margin-auto;
+}

@@ -1,0 +1,12 @@
+.w_btn {
+  background-color:#0066CC;
+  color:white;
+  font-weight:800px;
+  border:1px solid lightgrey;
+  margin-left:15px;
+}
+
+.w_btn:hover {
+  background-color:skyblue;
+  transition:0.5s;
+}

@@ -1,0 +1,55 @@
+.intro_back {
+  border:none;
+  height:600px;
+  width:700px;
+  border-radius:8%;
+  margin:auto;
+  margin-bottom:50px;
+  background-image:url('/static/images/meeting_back.jpg');
+  background-size: cover;
+  z-index:1
+  
+ 
+}
+
+.blur:before {
+   content: '';
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: inherit;
+  z-index:-1;
+ 
+}
+
+.intro_title {
+  font-weight:800;
+  color:black;
+  margin-top:50px;
+  font-size:21px;
+  padding-top:50px;
+  width:400px;
+  text-align:center;
+  margin-left:150px;
+}
+
+.intro_content {
+  width:500px;
+  height:200px;
+  margin-top:60px;
+  border:1px solid lightgrey
+}
+
+.intro_button {
+  border:none;
+  width:200px;
+  height:60px;
+  font-size:20px;
+  font-weight:800;
+
+}
+
+.intro_button:hover {
+  background-color:#00CC66;
+  transition:0.5s;
+  color:white;
+}

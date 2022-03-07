@@ -1,0 +1,30 @@
+video {
+   			width:550px;
+
+   		}
+   		
+   		.row #video {
+   			margin-top:30px;
+   		}
+   		
+   		.info_content {
+   			font-size:20px;
+   		}
+   		
+   		@media screen and (max-width:992px) {
+   			.info_content {
+   				font-size:12px;
+   			}
+   			video {
+   				width:300px;
+   			}
+   		}
+   		
+   		@media screen and (max-width:767px) {
+   			.info_content {
+   				font-size:12px;
+   			}
+   			video {
+   				width:300px;
+   			}
+   		}

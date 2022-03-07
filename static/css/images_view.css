@@ -1,0 +1,39 @@
+table {
+  border-top:1px solid lightgrey;
+  margin:auto;
+  width:800px;
+  margin-bottom:30px;
+  vertical-align:center;
+  margin-right:550px;
+}
+
+.image_title {
+  font-size:20px;
+ font-weight:700;
+ margin-top:10px;
+ margin-bottiom:10px;
+}
+
+.image_name {
+ font-size:14px;
+ font-weight:800;
+ margin-top:10px;
+ margin-bottiom:10px;
+ background-color:Lavender;
+}
+
+.image_content {
+  height:300px;
+  vertical-align:top;
+  border-bottom:1px solid lightgrey;
+  font-size:20px;
+}
+
+.image_date {
+ font-size:14px;
+ font-weight:800;
+ margin-top:10px;
+ margin-bottiom:10px;
+ background-color:Lavender;
+ border-bottom:1px solid lightgrey;
+}

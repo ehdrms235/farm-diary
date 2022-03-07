@@ -1,0 +1,74 @@
+.wrap{
+  position:relative;
+  height: 900px;
+  border:none
+}
+.login_box{
+  margin-top:100px;
+  position:absolute;
+  width:400px; 
+  height: 400px;
+  left: 0; right: 0;
+  margin-left:auto; margin-right:auto;
+  border:1px solid lightgrey;
+}
+
+.signup_box{
+  margin-top:60px;
+  position:absolute;
+  width:400px; 
+  height: 800px;
+  left: 0; right: 0;
+  margin-left:auto; margin-right:auto;
+  border:1px solid lightgrey;
+}
+
+.input_box {
+  margin-top:10px;
+  width:300px;
+  height:500px;
+  border:none
+  
+}
+
+.input_box p {
+  margin-left:50px;
+  margin-bottom:10px;
+  margin-top:10px;
+
+}
+
+.input_box2 {
+ width:200px;
+ left: 0; right: 0;
+  margin-left:auto; margin-right:auto;
+  position:absolute;
+}
+
+.input_radio {
+  margin-left:40px;
+}
+
+
+.btn {
+  border:none;
+  font-size:15px;
+  margin-top:60px;
+  margin-rigth:20px;
+  font-weight:800;
+}
+
+.btn:hover {
+  background-color:skyblue;
+
+}
+
+.select_box {
+  margin-bottom:50px;
+  width:200px;
+  left: 0; right: 0;
+  margin-left:auto; margin-right:auto;
+  position:absolute;
+  
+}
+
